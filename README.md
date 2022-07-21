@@ -20,7 +20,7 @@ News Website
 ## API Reference
 
 #### Provided by zendvn
-```http
+```html
   http://apiforlearning.zendvn.com/
 ```
 
