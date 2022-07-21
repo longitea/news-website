@@ -1,12 +1,11 @@
 
 # Final Project
 News Website
-> You can visit my website: [click here](https://longitea.github.io/zendvn_frontend_14_thanhlong_final_project)
+> You can visit my website: [click here](https://longitea.github.io/zendvn_frontend_14_thanhlong_final_project/index)
 
 ## Table of Contents
 - [Tech](#Tech)
 - [Features](#Features)
-- [Folder Structure](#CoreStructure)
 
 ## Tech
 - Using Jquery and Ajax call API .
