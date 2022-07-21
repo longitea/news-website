@@ -37,10 +37,9 @@ export function renderPostSmall(postSmall, API_URL) {
             postSmall.html(content);
         }
     });
-
 }
 
-function renderPost(item) {
+export function renderPost(item) {
     let thumb = item.thumb;
     let title = item.title;
     let description = item.description;

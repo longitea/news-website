@@ -22,13 +22,15 @@ export function renderMenu(mainMenu) {
 
                 }
             }
-
             contentMenuOther = /*html*/`
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Danh mục khác</a>
                             <ul class="dropdown-menu">
                                 ${contentMenuOther}
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="favorite.html">Favorite Articles 💙</a>
                         </li>`;
 
             mainMenu.html(contentMenu + contentMenuOther);

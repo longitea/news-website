@@ -2,7 +2,6 @@ export default function handleLike(){
     let arrayLiked = JSON.parse(localStorage.getItem("articlesLiked")) || []
     
     $(document).on('click', '.btn-like', function (event) {
-        console.log(arrayLiked);
         const img = $(event.target)
         // lưu vào json -> convert sang string
         const id = parseInt(img.attr('id'))
