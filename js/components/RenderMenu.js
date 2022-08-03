@@ -30,7 +30,7 @@ export function renderMenu(mainMenu) {
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="favorite.html">Favorite Articles 💙</a>
+                            <a class="nav-link" href="favorite.html">Bài Viết Yêu Thích 💙</a>
                         </li>`;
 
             mainMenu.html(contentMenu + contentMenuOther);

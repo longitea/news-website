@@ -11,8 +11,8 @@ $(document).ready(function () {
     let postBig = $('#posts_big');
     let postsSmall = $('#posts_small');
     let postSilder = $('.swiper-wrapper');
-    let postPopolar = $('#popular-posts')
-    let countCategory = $('#category-count-articles')
+    let postPopolar = $('.popular-posts')
+    let countCategory = $('.category-count-articles')
 
     // render CatetogyNews
     renderMenu(mainMenu);
@@ -35,6 +35,7 @@ $(document).ready(function () {
         },
         dataType: "JSON",
         success: function (response) {
+            console.log(response);
             const sidler = response.map(element => renderSilder(element)).join('');
             postSilder.html(sidler)
             // fix lỗi css ngu
@@ -45,7 +46,8 @@ $(document).ready(function () {
     function renderSilder({ thumb, category, id, description, publish_date }) {
         const idArticle = `detail.html?id=${id}`;
         const count = countComment(id)
-
+        let pubDate = new Date(publish_date);
+        pubDate = pubDate.toLocaleDateString('vi-VI');
         return (`
             <!--/.swiper-slide 1-->
             <div class="swiper-slide">
@@ -55,9 +57,8 @@ $(document).ready(function () {
                         <span class="badge badge-lg bg-white text-uppercase mb-3">${category.name}</span>
                         <h2 class="post-title h3 mt-1 mb-3"><a href=${idArticle}>${description}</a></h2>
                         <ul class="post-meta text-white mb-0">
-                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span>${publish_date}</span></li>
-                            <li class="post-author"><a href="#"><i class="uil uil-user"></i><span>By Sandbox</span></a></li>
-                            <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>${count}<span>Comments</span></a></li>
+                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span>${pubDate}</span></li>
+                            <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>${count}<span> Comments</span></a></li>
                         </ul>
                         <!-- /.post-meta -->
                     </figcaption>

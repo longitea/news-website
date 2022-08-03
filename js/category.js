@@ -4,6 +4,7 @@ import { renderPopularPost, renderPostBig, renderPostSmall } from "./components/
 import handleLike from "./modules/handleLike.js";
 
 
+
 $(document).ready(function () {
     // DOM Seletor
     let mainMenu = $('.main-menu');
@@ -11,9 +12,7 @@ $(document).ready(function () {
     let postsBig = $('#posts_big');
     let postSmall = $('#posts_small');
     let postPopolar = $('#popular-posts')
-    let countCategory = $('#category-count-articles')
-
-
+    let countCategory = $('#category-count-articles')    
 
     //  Render Menu 
     renderMenu(mainMenu);

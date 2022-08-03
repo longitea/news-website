@@ -79,7 +79,7 @@ export function renderPost(item) {
                 <div class="card-footer">
                     <ul class="post-meta d-flex mb-0">
                         <li class="post-date"><i class="uil uil-calendar-alt"></i><span>${pubDate}</span></li>
-                        <li class="post-comments"><a href="#"><i  class="uil uil-comment"></i><span style='color:#3f78e0'>${count} Comments</span></a></li>
+                        <li class="post-comments"><a href="#"><i  class="uil uil-comment"></i><span >${count} Comments</span></a></li>
                         <li class="post-likes ms-auto">
                             <img class='btn-like' id="${item.id}" src="assets/img/icons/heart/${heart}" alt=""></a>
                         </li>
@@ -108,6 +108,8 @@ export function renderPopularPost(DOM, API_URL) {
 function popularPost({ thumb, title, publish_date, id }) {
     const idArticle = `detail.html?id=${id}`;
     const count = countComment(id)
+    let pubDate = new Date(publish_date);
+    pubDate = pubDate.toLocaleDateString('vi-VI');
 
     return /*html*/`
         <!-- Popular Posts 1 -->
@@ -117,7 +119,7 @@ function popularPost({ thumb, title, publish_date, id }) {
             <div class="post-content">
                 <h6 class="mb-2"> <a class="link-dark" href=${idArticle}>${title}</a> </h6>
                 <ul class="post-meta">
-                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>${publish_date}</span></li>
+                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>${pubDate}</span></li>
                     <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>${count}</a>
                     </li>
                 </ul>
