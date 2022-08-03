@@ -10,9 +10,6 @@ const API_URL = 'http://apiforlearning.zendvn.com/api/';
 export const API_CATEGORY = `${API_URL}categories_news`;
 export const API_ARTICLE = `${API_URL}articles`;
 
-
-
-
 // -=============== PAGE ===============-
 // 1. Category.html -> Render Article dựa trên Category
 export const API_CATEGORY_DETAIL_BY_ID = API_CATEGORY + '/' + id

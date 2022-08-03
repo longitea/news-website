@@ -1,7 +1,7 @@
 
 # Final Project
 News Website
-> You can visit my website: [click here](https://longitea.github.io/zendvn_frontend_14_thanhlong_final_project/index)
+> You can visit my website: [click here](riot-news.surge.sh)
 
 ## Table of Contents
 - [Tech](#Tech)
@@ -12,10 +12,12 @@ News Website
 - HTML, CSS, JS.
 
 ## Features
+- Sử dụng Axios và Jquery để lấy thông tin từ api
 - Load Articles and Article Detail from API.
 - Filter Articles via Category
 - Comment, Like Articles for independent post.
-- Favorite Page show Article load via LocalStorage
+- Sử dụng LocalStorage để lưu comment và bài viết yêu thích làm tính năng Commment và Like Articles
+- Favorite Page show Article via LocalStorage
 
 ### Cách làm trang Favorite
 1. Render các bài viết yêu thích
