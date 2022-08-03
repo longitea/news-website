@@ -1,7 +1,7 @@
 
 # Final Project
 News Website
-> You can visit my website: [click here](riot-news.surge.sh)
+> You can visit my website: [click here](http://riot-news.surge.sh)
 
 ## Table of Contents
 - [Tech](#Tech)
