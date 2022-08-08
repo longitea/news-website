@@ -1,6 +1,5 @@
 # Newspaper - News Website
-Riot is a dynamic website used to read news that supports responsive on mobile devices. This website uses jquery and ajax to get data from the API. In addition, it also supports a number of other features such as using LocalStorage to do the heart drop function, commenting on posts and adding articles to the favorites list.
-
+Website tin tức.
 ## Preview
 ![App Screenshot](./assets/img/preview.png)
 **[Visit My Website](http://riot-news.surge.sh)**
